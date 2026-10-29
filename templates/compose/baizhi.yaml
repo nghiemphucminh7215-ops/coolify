@@ -1,0 +1,12 @@
+# documentation: https://work.docs.baizhi.cloud/
+# slogan: Open-source team AI workspace.
+# category: productivity
+# tags: ai,office,baizhi,monkeycode
+# port: 80
+
+services:
+  baizhi:
+    image: chaitin-registry.cn-hangzhou.cr.aliyuncs.com/monkeycode/monkeyai-frontend:latest
+    environment:
+      - SERVICE_URL_BAIZHI_80
+    restart: unless-stopped
